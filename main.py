@@ -24,7 +24,7 @@ def send_startup_message():
     """Send a message when bot starts"""
     base_url = "https://api.telegram.org/bot7452324631:AAHFMFgb5s2Ef5YRTRDNxFNcb4ik-ETz_Tc/sendMessage"
     parameters = {
-        "chat_id": "@news_news127",
+        "chat_id": "@news_crypto_911",
         "text": "Bot started 🤖"
     }
     try:

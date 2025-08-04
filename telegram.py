@@ -15,9 +15,9 @@ def send_massage(loc, checklist):
         "text": f"""
 {event}📅
 
-📈 previous ----> {previous} 
-🔮 Forecast ----> {forecast} 
-✨ Actual ----> {actual} 
+📈 previous : {previous} 
+🔮 Forecast : {forecast} 
+✨ Actual : {actual} 
 
 """
     }

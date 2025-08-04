@@ -111,7 +111,7 @@ def find_index(main_df):
     """find text of each data for replace new data in it"""
     index_ = []
     # Define main_event as a list of keywords to search for
-    main_event = ["GDP", "CPI", "NFP", "Interest Rate"]  # Add relevant economic terms
+    main_event = ["GDP", "CPI", "NFP", "Interest Rate", "PMI", "Unemployment Rate", "Retail Sales", "Trade Balance", "Industrial Production", "Housing Starts", "ISM Non-Manufacturing PMI"]  # Add relevant economic terms
     for ev in range(int(main_df.shape[0])):
         event = main_df.Event[ev]
         for k in main_event:
@@ -122,7 +122,7 @@ def find_index(main_df):
     return index_
 
 
-def final_table(url="https://www.investing.com/economic-calendar"):
+def final_table(url="c"):
     """get USA table from investing.com"""
     try:
         table = connection(url=url)
